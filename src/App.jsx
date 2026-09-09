@@ -26,9 +26,10 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import ResourceAugmentation from "./pages/Resourcepage/ResourceAugmentation";
 import Agi from "./pages/Agi/Agi";
 
-
-
-
+// Insights pages
+import Insights from "./pages/Insights/Insights";
+import InsightArticle from "./pages/InsightArticle/InsightArticle";
+import AdminInsights from "./pages/AdminInsights/AdminInsights";
 
 import Service from "./components/Service/Service";
 import Execution from "./components/Execution/Execution";
@@ -74,6 +75,11 @@ function App() {
                 <Route path="/my-applications" element={<MyApplications />} />
                 <Route path="/admin-application" element={<AdminApplication />} />
                 <Route path="/admin-add-job" element={<AdminAddJob />} />
+
+                {/* Insights Routes */}
+                <Route path="/insights" element={<Insights />} />
+                <Route path="/insights/:slug" element={<InsightArticle />} />
+                <Route path="/admin/insights" element={<AdminInsights />} />
 
                 <Route path="/service" element={<Service />} />
                 <Route path="/execution" element={<Execution />} />
