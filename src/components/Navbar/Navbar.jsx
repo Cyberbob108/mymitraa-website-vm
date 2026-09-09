@@ -146,6 +146,7 @@ function Navbar({ hidden, slideIndex }) {
               <NavLink to="/casestudy">Case Study</NavLink>
               <NavLink to="/portfolio">Portfolio</NavLink>
               <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/insights">Insights</NavLink>
 
               {/* Mobile-only auth */}
               <div className="mobile-auth">
